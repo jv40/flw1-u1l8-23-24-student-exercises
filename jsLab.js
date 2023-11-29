@@ -16,21 +16,29 @@ let tile9 = document.querySelector('.tile-9')
 // 1. Tile 1 feels a little sad. 
 // - Update the inner HTML to show an encouraging message! 
 // - Something like "YOU GOT THIS!" or even a "You're a beautiful person!" 
-
+tile1.innerHTML="You remind me of one of those bananas in Mario Kart. Because you've got me falling for you... And now I've got a blue shell!";
 
 
 // 2. Tile 2 has a button. 
 // - Create a click event and have the background color of tile 2 change to a shade of green.
 // - BE SURE TO SAVE THE BUTTON FIRST AS A VARIABLE.
 // - Can you see if there's a way to toggle it???
+let tile2Button = document.querySelector(".tile-2-button");
 
+tile2Button.addEventListener("click", function() {
+  tile2.style.backgroundColor="#568203";
+});
 
 // 3. What's this? A totoro? Where's his friends? 
 // - Using createElement, create a friend (an image element).
 // - Once created, set the src of it to the image address.
 // - Append the element to tile 3. 
 // - Need some inspiration? Go to giphy.com, search a character and choose the "stickers".
+let fun_guy = document.createElement("img");
 
+fun_guy.src="https://media4.giphy.com/media/OgngfuNtaHYOank9Y0/giphy.gif?cid=ecf05e47hr8loc4tgdie37s4nxkopzdju3ogavwc8w37u88y&ep=v1_stickers_search&rid=giphy.gif&ct=s";
+
+tile3.appendChild(fun_guy);
 
 // 4. Oh no! A broken image! We need to fix this.
 // - Set the src for tile 4 to have an image of your favorite TV show.
